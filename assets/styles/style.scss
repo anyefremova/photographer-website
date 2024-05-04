@@ -1,0 +1,12 @@
+@import "./fonts";
+@import "./vars";
+
+.header_container {
+    .header_logo {
+        font-family: $font-family-macherie;
+    }
+
+    .header_menu {
+        font-family: $font-family-montserrat;
+    }
+}
