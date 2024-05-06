@@ -7,9 +7,59 @@
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
   font-weight: 400;
 }
-.header_container .header_logo {
-  font-family: "Macherie";
+.home_page {
+  background: url(../images/mainpage_image.png);
+  background-size: cover;
+  min-height: 100vh;
+  padding: 10vh 4vw 0 4vw;
 }
-.header_container .header_menu {
+.home_page .header_container .header_navbar {
+  background-color: transparent;
+}
+.home_page .header_container .header_navbar .header_logo {
+  font-family: "Macherie";
+  color: #A48C80;
+  font-size: 2rem;
+}
+.home_page .header_container .header_navbar .header_menu {
+  font-family: "Montserrat", sans-serif;
+  color: #363636;
+  font-size: 1.2rem;
+}
+.home_page .header_container .header_navbar .header_menu .header_nav {
+  display: flex;
+}
+.home_page .home_page__content {
+  margin-top: 20vh;
+}
+.home_page .home_page__content .home_page__title {
+  font-family: "Macherie";
+  color: #A48C80;
+  font-size: 7rem;
+  width: 60vw;
+}
+.home_page .home_page__content .home_page__text {
+  font-family: "Montserrat", sans-serif;
+  color: #363636;
+  font-size: 1.5rem;
+  width: 20vw;
+  margin-top: 18vh;
+  margin-bottom: 0;
+  padding-bottom: 85vh;
+}
+
+.about_me__page {
+  background-color: #000000;
+}
+.about_me__page .block2_container {
+  padding-top: 10vh;
+}
+.about_me__page .block2_container .title-block-2 {
+  font-family: "Macherie";
+  color: #D0B8AC;
+}
+.about_me__page .block2_container .list-group__block4 {
+  border: solid 1px #F2C8BE;
+  color: #F2C8BE;
   font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=style.css.map */
