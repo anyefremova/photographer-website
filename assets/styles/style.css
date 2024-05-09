@@ -7,6 +7,16 @@
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
   font-weight: 400;
 }
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light/Montserrat-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
 .home_page {
   background: url(../images/mainpage_image.png);
   background-size: cover;
@@ -56,6 +66,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding-bottom: 10vh;
 }
 .about_me__page .block2_container .title-block-2 {
   font-family: "Macherie";
@@ -76,4 +87,21 @@
 }
 .about_me__page .block2_container .block-2__text-block .list-group__block2 .list-item {
   padding: 1.5vh 0;
+}
+
+.portfolio_page {
+  background-color: #000000;
+}
+.portfolio_page .title-block-3 {
+  font-family: "Macherie";
+  color: #D0B8AC;
+  font-size: 4rem;
+}
+.portfolio_page .portfolio_first_section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.portfolio_page .portfolio_first_section .portfolio_text {
+  font-family: "Montserrat-Light", sans-serif;
 }/*# sourceMappingURL=style.css.map */

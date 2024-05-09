@@ -59,6 +59,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        padding-bottom: 10vh;
 
         .title-block-2 {
             font-family: $font-family-macherie;
@@ -82,6 +83,26 @@
                     padding: 1.5vh 0;
                 }
             }
+        }
+    }
+}
+
+.portfolio_page {
+    background-color: #000000;
+
+    .title-block-3 {
+        font-family: $font-family-macherie;
+        color: $beige-title;
+        font-size: 4rem;
+    }
+
+    .portfolio_first_section {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        .portfolio_text {
+            font-family: $font-family-montserrat-light;
         }
     }
 }
