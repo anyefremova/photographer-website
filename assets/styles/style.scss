@@ -7,23 +7,32 @@
     min-height: 100vh;
     padding: 10vh 4vw 0 4vw;
 
-    .header_container {
-        .header_navbar {
-            background-color: transparent;
+    .header {
+        display: flex;
+        flex-direction: column;
 
-            .header_logo {
-                font-family: $font-family-macherie;
-                color: $beige;
-                font-size: 2rem;
-            }
+        .header_container {
+            flex-grow: 1;
 
-            .header_menu {
-                font-family: $font-family-montserrat;
-                color: $black;
-                font-size: 1.2rem;
+            .header_navbar {
+                display: flex;
+                background-color: transparent;
 
-                .header_nav {
-                    display: flex;
+                .header_logo {
+                    font-family: $font-family-macherie;
+                    color: $beige;
+                    font-size: 2rem;
+                }
+
+                .header_menu {
+                    order: 1;
+                    font-family: $font-family-montserrat;
+                    color: $black;
+                    font-size: 1.2rem;
+
+                    .header_nav {
+                        display: flex;
+                    }
                 }
             }
         }
@@ -64,8 +73,12 @@
         .title-block-2 {
             font-family: $font-family-macherie;
             color: $beige-title;
-            font-size: 5rem;
-            padding: 5vh 10vw 10vh 0;
+            font-size: 4.5rem;
+            padding: 5vh 10vw 7vh 0;
+        }
+
+        .block-2__image-block {
+            height: 98vh;
         }
 
         .block-2__text-block {
@@ -93,16 +106,76 @@
     .title-block-3 {
         font-family: $font-family-macherie;
         color: $beige-title;
-        font-size: 4rem;
+        font-size: 4.5rem;
+        padding: 8vh 0 5vh 9vw;
     }
 
-    .portfolio_first_section {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+    .portfolio_container {
+        position: relative;
+        padding-bottom: 10vh;
 
-        .portfolio_text {
-            font-family: $font-family-montserrat-light;
+        .portfolio_main {
+            padding-bottom: 40vh;
+
+            .portfolio_first {
+                position: relative;
+                z-index: 1;
+
+                .portfolio_first_section {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+
+                    .portfolio_part1 {
+                        margin-right: 6vw;
+                    }
+
+                    .portfolio_text {
+                        font-family: $font-family-montserrat-light;
+                        font-size: 2rem;
+                        color: $beige-text;
+                        opacity: 0.8;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .portfolio_text_element1 {
+                        display: flex;
+                        justify-content: start;
+                    }
+
+                    .portfolio_text_element2 {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .portfolio_text_element3 {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+
+            .portfolio_fixed_photo {
+                position: absolute;
+                bottom: 15%;
+                left: 55%;
+                transform: translateX(-50%);
+                z-index: 2;
+            }
+        }
+
+        .portfolio_button {
+            display: flex;
+            justify-content: center;
+
+            .portfolio_button_content {
+                font-family: $font-family-montserrat;
+                border: 1px solid $beige-text;
+                background-color: transparent;
+                color: $beige-title;
+                width: 15vw;
+            }
         }
     }
 }

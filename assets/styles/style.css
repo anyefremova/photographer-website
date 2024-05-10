@@ -23,20 +23,29 @@
   min-height: 100vh;
   padding: 10vh 4vw 0 4vw;
 }
-.home_page .header_container .header_navbar {
+.home_page .header {
+  display: flex;
+  flex-direction: column;
+}
+.home_page .header .header_container {
+  flex-grow: 1;
+}
+.home_page .header .header_container .header_navbar {
+  display: flex;
   background-color: transparent;
 }
-.home_page .header_container .header_navbar .header_logo {
+.home_page .header .header_container .header_navbar .header_logo {
   font-family: "Macherie";
   color: #A48C80;
   font-size: 2rem;
 }
-.home_page .header_container .header_navbar .header_menu {
+.home_page .header .header_container .header_navbar .header_menu {
+  order: 1;
   font-family: "Montserrat", sans-serif;
   color: #363636;
   font-size: 1.2rem;
 }
-.home_page .header_container .header_navbar .header_menu .header_nav {
+.home_page .header .header_container .header_navbar .header_menu .header_nav {
   display: flex;
 }
 .home_page .home_page__content {
@@ -71,8 +80,11 @@
 .about_me__page .block2_container .title-block-2 {
   font-family: "Macherie";
   color: #D0B8AC;
-  font-size: 5rem;
-  padding: 5vh 10vw 10vh 0;
+  font-size: 4.5rem;
+  padding: 5vh 10vw 7vh 0;
+}
+.about_me__page .block2_container .block-2__image-block {
+  height: 98vh;
 }
 .about_me__page .block2_container .block-2__text-block {
   align-items: center;
@@ -95,13 +107,63 @@
 .portfolio_page .title-block-3 {
   font-family: "Macherie";
   color: #D0B8AC;
-  font-size: 4rem;
+  font-size: 4.5rem;
+  padding: 8vh 0 5vh 9vw;
 }
-.portfolio_page .portfolio_first_section {
+.portfolio_page .portfolio_container {
+  position: relative;
+  padding-bottom: 10vh;
+}
+.portfolio_page .portfolio_container .portfolio_main {
+  padding-bottom: 40vh;
+}
+.portfolio_page .portfolio_container .portfolio_main .portfolio_first {
+  position: relative;
+  z-index: 1;
+}
+.portfolio_page .portfolio_container .portfolio_main .portfolio_first .portfolio_first_section {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
-.portfolio_page .portfolio_first_section .portfolio_text {
+.portfolio_page .portfolio_container .portfolio_main .portfolio_first .portfolio_first_section .portfolio_part1 {
+  margin-right: 6vw;
+}
+.portfolio_page .portfolio_container .portfolio_main .portfolio_first .portfolio_first_section .portfolio_text {
   font-family: "Montserrat-Light", sans-serif;
+  font-size: 2rem;
+  color: #F2C8BE;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio_page .portfolio_container .portfolio_main .portfolio_first .portfolio_first_section .portfolio_text_element1 {
+  display: flex;
+  justify-content: start;
+}
+.portfolio_page .portfolio_container .portfolio_main .portfolio_first .portfolio_first_section .portfolio_text_element2 {
+  display: flex;
+  justify-content: center;
+}
+.portfolio_page .portfolio_container .portfolio_main .portfolio_first .portfolio_first_section .portfolio_text_element3 {
+  display: flex;
+  justify-content: flex-end;
+}
+.portfolio_page .portfolio_container .portfolio_main .portfolio_fixed_photo {
+  position: absolute;
+  bottom: 15%;
+  left: 55%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.portfolio_page .portfolio_container .portfolio_button {
+  display: flex;
+  justify-content: center;
+}
+.portfolio_page .portfolio_container .portfolio_button .portfolio_button_content {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #F2C8BE;
+  background-color: transparent;
+  color: #D0B8AC;
+  width: 15vw;
 }/*# sourceMappingURL=style.css.map */
