@@ -162,20 +162,63 @@
                 left: 55%;
                 transform: translateX(-50%);
                 z-index: 2;
+                margin-bottom: 20vh;
             }
         }
 
         .portfolio_button {
             display: flex;
             justify-content: center;
+            margin-bottom: 10vh;
 
             .portfolio_button_content {
                 font-family: $font-family-montserrat;
                 border: 1px solid $beige-text;
                 background-color: transparent;
                 color: $beige-title;
-                width: 15vw;
+                width: 20vw;
+                font-size: 1.6rem;
             }
+        }
+    }
+}
+
+.price_page {
+    background-color: #000000;
+
+    .block-4__card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $beige-title;
+
+        .title-block-4 {
+            font-family: $font-family-macherie;
+            color: $beige-title;
+            font-size: 4.5rem;
+        }
+
+        .price_border {
+            border: solid 1px #F2C8BE;
+            margin: 5vh 5vw 5vh 0;
+            padding: 3vh 2vw;
+
+            .price_list_text {
+                font-family: $font-family-montserrat-extrabold;
+                font-size: 1.6rem;
+            }
+
+            .list-group__block4 {
+                font-family: $font-family-montserrat;
+                font-size: 1.3rem;
+            }
+
+        }
+
+        .price_text {
+            font-family: $font-family-montserrat-semibold;
+            text-decoration: underline;
+            font-size: 2rem;
         }
     }
 }

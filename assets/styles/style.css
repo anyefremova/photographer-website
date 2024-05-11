@@ -17,6 +17,16 @@
   src: url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf");
   font-weight: 700;
 }
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+}
 .home_page {
   background: url(../images/mainpage_image.png);
   background-size: cover;
@@ -155,15 +165,51 @@
   left: 55%;
   transform: translateX(-50%);
   z-index: 2;
+  margin-bottom: 20vh;
 }
 .portfolio_page .portfolio_container .portfolio_button {
   display: flex;
   justify-content: center;
+  margin-bottom: 10vh;
 }
 .portfolio_page .portfolio_container .portfolio_button .portfolio_button_content {
   font-family: "Montserrat", sans-serif;
   border: 1px solid #F2C8BE;
   background-color: transparent;
   color: #D0B8AC;
-  width: 15vw;
+  width: 20vw;
+  font-size: 1.6rem;
+}
+
+.price_page {
+  background-color: #000000;
+}
+.price_page .block-4__card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #D0B8AC;
+}
+.price_page .block-4__card-body .title-block-4 {
+  font-family: "Macherie";
+  color: #D0B8AC;
+  font-size: 4.5rem;
+}
+.price_page .block-4__card-body .price_border {
+  border: solid 1px #F2C8BE;
+  margin: 5vh 5vw 5vh 0;
+  padding: 3vh 2vw;
+}
+.price_page .block-4__card-body .price_border .price_list_text {
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  font-size: 1.6rem;
+}
+.price_page .block-4__card-body .price_border .list-group__block4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+.price_page .block-4__card-body .price_text {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  text-decoration: underline;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
