@@ -228,4 +228,8 @@
 .reviews_page .reviews_img_block {
   display: flex;
   justify-content: center;
+}
+
+.appointment_page {
+  background-color: #000000;
 }/*# sourceMappingURL=style.css.map */
