@@ -177,8 +177,9 @@
   border: 1px solid #F2C8BE;
   background-color: transparent;
   color: #D0B8AC;
-  width: 20vw;
+  width: 22vw;
   font-size: 1.6rem;
+  padding: 1vh 3vw;
 }
 
 .price_page {
@@ -212,4 +213,19 @@
   font-family: "Montserrat-SemiBold", sans-serif;
   text-decoration: underline;
   font-size: 2rem;
+}
+
+.reviews_page {
+  background-color: #000000;
+  padding-top: 22vh;
+}
+.reviews_page .title-block-5 {
+  font-family: "Macherie";
+  color: #D0B8AC;
+  font-size: 4.5rem;
+  margin: 0 0 8vh 7vw;
+}
+.reviews_page .reviews_img_block {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
