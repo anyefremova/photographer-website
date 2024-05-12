@@ -47,13 +47,13 @@
 .home_page .header .header_container .header_navbar .header_logo {
   font-family: "Macherie";
   color: #A48C80;
-  font-size: 2rem;
+  font-size: 2em;
 }
 .home_page .header .header_container .header_navbar .header_menu {
   order: 1;
   font-family: "Montserrat", sans-serif;
   color: #363636;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 .home_page .header .header_container .header_navbar .header_menu .header_nav {
   display: flex;
@@ -64,13 +64,13 @@
 .home_page .home_page__content .home_page__title {
   font-family: "Macherie";
   color: #A48C80;
-  font-size: 6.5rem;
+  font-size: 6.5em;
   width: 60vw;
 }
 .home_page .home_page__content .home_page__text {
   font-family: "Montserrat", sans-serif;
   color: #363636;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   width: 20vw;
   margin-top: 18vh;
   margin-bottom: 0;
@@ -90,7 +90,7 @@
 .about_me__page .block2_container .title-block-2 {
   font-family: "Macherie";
   color: #D0B8AC;
-  font-size: 4.5rem;
+  font-size: 4.5em;
   padding: 5vh 10vw 7vh 0;
 }
 .about_me__page .block2_container .block-2__image-block {
@@ -103,7 +103,7 @@
   border: solid 1px #F2C8BE;
   color: #F2C8BE;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   margin-right: 7vw;
   padding: 3vh 3vw;
 }
@@ -117,7 +117,7 @@
 .portfolio_page .title-block-3 {
   font-family: "Macherie";
   color: #D0B8AC;
-  font-size: 4.5rem;
+  font-size: 4.5em;
   padding: 8vh 0 5vh 9vw;
 }
 .portfolio_page .portfolio_container {
@@ -141,7 +141,7 @@
 }
 .portfolio_page .portfolio_container .portfolio_main .portfolio_first .portfolio_first_section .portfolio_text {
   font-family: "Montserrat-Light", sans-serif;
-  font-size: 2rem;
+  font-size: 2em;
   color: #F2C8BE;
   opacity: 0.8;
   display: flex;
@@ -178,7 +178,7 @@
   background-color: transparent;
   color: #D0B8AC;
   width: 22vw;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   padding: 1vh 3vw;
 }
 
@@ -194,7 +194,7 @@
 .price_page .block-4__card-body .title-block-4 {
   font-family: "Macherie";
   color: #D0B8AC;
-  font-size: 4.5rem;
+  font-size: 4.5em;
 }
 .price_page .block-4__card-body .price_border {
   border: solid 1px #F2C8BE;
@@ -203,16 +203,16 @@
 }
 .price_page .block-4__card-body .price_border .price_list_text {
   font-family: "Montserrat-ExtraBold", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.6em;
 }
 .price_page .block-4__card-body .price_border .list-group__block4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 .price_page .block-4__card-body .price_text {
   font-family: "Montserrat-SemiBold", sans-serif;
   text-decoration: underline;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .reviews_page {
@@ -222,7 +222,7 @@
 .reviews_page .title-block-5 {
   font-family: "Macherie";
   color: #D0B8AC;
-  font-size: 4.5rem;
+  font-size: 4.5em;
   margin: 0 0 8vh 7vw;
 }
 .reviews_page .reviews_img_block {
@@ -232,4 +232,22 @@
 
 .appointment_page {
   background-color: #000000;
+}
+.appointment_page .title-block-6 {
+  font-family: "Macherie";
+  color: #D0B8AC;
+  font-size: 4.5em;
+}
+.appointment_page .icon_social {
+  width: 2.5vw;
+}
+.appointment_page .appointment_text {
+  font-family: "Montserrat", sans-serif;
+  color: #F2C8BE;
+  font-size: 1.2em;
+  width: 37vw;
+}
+.appointment_page .input_fields {
+  background-color: #000000;
+  color: #D0B8AC;
 }/*# sourceMappingURL=style.css.map */

@@ -21,14 +21,14 @@
                 .header_logo {
                     font-family: $font-family-macherie;
                     color: $beige;
-                    font-size: 2rem;
+                    font-size: 2em;
                 }
 
                 .header_menu {
                     order: 1;
                     font-family: $font-family-montserrat;
                     color: $black;
-                    font-size: 1.2rem;
+                    font-size: 1.2em;
 
                     .header_nav {
                         display: flex;
@@ -44,14 +44,14 @@
         .home_page__title {
             font-family: $font-family-macherie;
             color: $beige;
-            font-size: 6.5rem;
+            font-size: 6.5em;
             width: 60vw;
         }
 
         .home_page__text {
             font-family: $font-family-montserrat;
             color: $black;
-            font-size: 1.5rem;
+            font-size: 1.5em;
             width: 20vw;
             margin-top: 18vh;
             margin-bottom: 0;
@@ -73,7 +73,7 @@
         .title-block-2 {
             font-family: $font-family-macherie;
             color: $beige-title;
-            font-size: 4.5rem;
+            font-size: 4.5em;
             padding: 5vh 10vw 7vh 0;
         }
 
@@ -88,7 +88,7 @@
                 border: solid 1px #F2C8BE;
                 color: $beige-text;
                 font-family: $font-family-montserrat;
-                font-size: 1.3rem;
+                font-size: 1.3em;
                 margin-right: 7vw;
                 padding: 3vh 3vw;
 
@@ -106,7 +106,7 @@
     .title-block-3 {
         font-family: $font-family-macherie;
         color: $beige-title;
-        font-size: 4.5rem;
+        font-size: 4.5em;
         padding: 8vh 0 5vh 9vw;
     }
 
@@ -132,7 +132,7 @@
 
                     .portfolio_text {
                         font-family: $font-family-montserrat-light;
-                        font-size: 2rem;
+                        font-size: 2em;
                         color: $beige-text;
                         opacity: 0.8;
                         display: flex;
@@ -177,7 +177,7 @@
                 background-color: transparent;
                 color: $beige-title;
                 width: 22vw;
-                font-size: 1.6rem;
+                font-size: 1.6em;
                 padding: 1vh 3vw;
             }
         }
@@ -196,7 +196,7 @@
         .title-block-4 {
             font-family: $font-family-macherie;
             color: $beige-title;
-            font-size: 4.5rem;
+            font-size: 4.5em;
         }
 
         .price_border {
@@ -206,12 +206,12 @@
 
             .price_list_text {
                 font-family: $font-family-montserrat-extrabold;
-                font-size: 1.6rem;
+                font-size: 1.6em;
             }
 
             .list-group__block4 {
                 font-family: $font-family-montserrat;
-                font-size: 1.3rem;
+                font-size: 1.3em;
             }
 
         }
@@ -219,7 +219,7 @@
         .price_text {
             font-family: $font-family-montserrat-semibold;
             text-decoration: underline;
-            font-size: 2rem;
+            font-size: 2em;
         }
     }
 }
@@ -231,7 +231,7 @@
     .title-block-5 {
         font-family: $font-family-macherie;
         color: $beige-title;
-        font-size: 4.5rem;
+        font-size: 4.5em;
         margin: 0 0 8vh 7vw;
     }
 
@@ -243,4 +243,26 @@
 
 .appointment_page {
     background-color: #000000;
+
+    .title-block-6 {
+        font-family: $font-family-macherie;
+        color: $beige-title;
+        font-size: 4.5em;
+    }
+
+    .icon_social {
+        width: 2.5vw;
+    }
+
+    .appointment_text {
+        font-family: $font-family-montserrat;
+        color: $beige-text;
+        font-size: 1.2em;
+        width: 37vw;
+    }
+
+    .input_fields {
+        background-color: #000000;
+        color: $beige-title;
+    }
 }
