@@ -34,6 +34,11 @@
   padding: 10vh 4vw 0 4vw;
 }
 .home_page .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 500;
   display: flex;
   flex-direction: column;
 }
@@ -48,15 +53,43 @@
   font-family: "Macherie";
   color: #A48C80;
   font-size: 2em;
+  margin-left: 3.5vw;
+}
+.home_page .header .header_container .header_navbar .navbar-toggler {
+  color: #A48C80;
+  border-color: #A48C80;
+}
+.home_page .header .header_container .header_navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a48c80' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .home_page .header .header_container .header_navbar .header_menu {
   order: 1;
   font-family: "Montserrat", sans-serif;
   color: #363636;
   font-size: 1.2em;
+  justify-content: space-evenly;
 }
 .home_page .header .header_container .header_navbar .header_menu .header_nav {
   display: flex;
+  margin: 0 !important;
+}
+.home_page .header .header_container .header_navbar .icon_social {
+  width: 2.5vw;
+}
+.home_page .header .header_container .header_navbar .nav_fixed {
+  order: 1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+}
+.home_page .header .header_container .header_navbar .nav_fixed .header_nav {
+  display: flex;
+}
+.home_page .header .header_container .header_navbar .nav_fixed .header_nav .nav-link {
+  color: #D0B8AC;
+}
+.home_page .header_fixed {
+  background-color: #000000;
+  box-shadow: 0 1px 15px #F2C8BE;
 }
 .home_page .home_page__content {
   margin-top: 20vh;
@@ -100,8 +133,8 @@
   align-items: center;
 }
 .about_me__page .block2_container .block-2__text-block .list-group__block2 {
-  border: solid 1px #F2C8BE;
-  color: #F2C8BE;
+  border: solid 1px #D0B8AC;
+  color: #D0B8AC;
   font-family: "Montserrat", sans-serif;
   font-size: 1.3em;
   margin-right: 7vw;
@@ -243,7 +276,7 @@
 }
 .appointment_page .appointment_text {
   font-family: "Montserrat", sans-serif;
-  color: #F2C8BE;
+  color: #D0B8AC;
   font-size: 1.2em;
   width: 37vw;
 }

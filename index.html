@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="фотограф Пермь, женский портрет Пермь, портретный фотограф Пермь, семейный фотограф Пермь, Александра Старкова фотограф, фото Пермь, фотосессия Пермь">
     <title>Starkovasphoto</title>
     <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
     <link rel="shortcut icon" href="./assets/images/logo1.png" type="image/png">
@@ -13,9 +15,9 @@
 
 <body>
     <div class="home_page">
-        <header class="header">
+        <header class="header" id="mainHeader">
             <div class="header_container">
-                <nav class="navbar navbar-expand-lg header_navbar">
+                <nav class="navbar navbar-light bg-lignt navbar-expand-lg header_navbar">
                     <div class="container-fluid">
                         <a class="navbar-brand header_logo" href="#">Starkovasphoto</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,21 +28,35 @@
                         <div class="collapse navbar-collapse header_menu" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 header_nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Обо мне</a>
+                                    <a class="nav-link" href="#aboutme">Обо мне</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Портфолио</a>
+                                    <a class="nav-link" href="#portfolio">Портфолио</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Прайс</a>
+                                    <a class="nav-link" href="#price">Прайс</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Отзывы</a>
+                                    <a class="nav-link" href="#reviews">Отзывы</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Записаться</a>
+                                    <a class="nav-link" href="#appointment">Записаться</a>
                                 </li>
                             </ul>
+                            <div class="appointment_icons">
+                                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
+                                    href="https://vk.com/starkovasashaa" role="button"><img
+                                        src="assets/images/icons-vk.png" class="icon_social"
+                                        alt="Логотип ВКонтакте"></a>
+                                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
+                                    href="https://t.me/starkovasasha" role="button"><img
+                                        src="assets/images/icons-telegram.png" class="icon_social"
+                                        alt="Логотип Телеграм"></a>
+                                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
+                                    href="https://www.instagram.com/starkovasphoto" role="button"><img
+                                        src="assets/images/icons-instagram.png" class="icon_social"
+                                        alt="Логотип Инстаграм"></a>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -51,7 +67,7 @@
             <p class="home_page__text">Рыжая девушка, готовая запечатлеть истинную красоту</p>
         </div>
     </div>
-    <section class="about_me__page">
+    <section class="about_me__page" id="aboutme">
         <div class="block2_container">
             <h5 class="title-block-2">Обо мне</h5>
             <div class="mb-lg-0 border-0">
@@ -78,7 +94,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio_page">
+    <section class="portfolio_page" id="portfolio">
         <h5 class="title-block-3">Портфолио</h5>
         <div class="portfolio_container">
             <div class="portfolio_main">
@@ -112,7 +128,7 @@
             </div>
         </div>
     </section>
-    <section class="price_page">
+    <section class="price_page" id="price">
         <div class="price_container">
             <div class="mb-lg-0 border-0">
                 <div class="row g-0 block4_content">
@@ -127,7 +143,8 @@
                                 <ul class="list-group__block4 list-group-flush">
                                     <li class="list-item">Составление мудборда, обсуждение 2-3 образов</li>
                                     <li class="list-item">1,5 часа съемки</li>
-                                    <li class="list-item">Съемка в студии или на улице в светлое время</li>
+                                    <li class="list-item">Съемка в студии или на улице в светлое время (студия
+                                        оплачивается отдельно)</li>
                                     <li class="list-item">Итоговый результат: 50-60 фото в ретуши и цветокоррекции (+
                                         ч/б)
                                     </li>
@@ -143,7 +160,7 @@
             </div>
         </div>
     </section>
-    <section class="reviews_page">
+    <section class="reviews_page" id="reviews">
         <div class="reviews_container">
             <h5 class="title-block-5">Отзывы</h5>
             <div class="reviews_img_block">
@@ -153,7 +170,7 @@
             </div>
         </div>
     </section>
-    <section class="appointment_page">
+    <section class="appointment_page" id="appointment">
         <div class="appointment_container">
             <h5 class="title-block-6">Запись на съемку</h5>
             <div class="appointment_block">
@@ -226,6 +243,26 @@
                 }, false)
             })
         })()
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 0) {
+                header.classList.add('header_fixed');
+            } else {
+                header.classList.remove('header_fixed');
+            }
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const nav = document.getElementById('navbarSupportedContent');
+            if (window.scrollY > 0) {
+                nav.classList.add('nav_fixed');
+            } else {
+                nav.classList.remove('nav_fixed');
+            }
+        });
     </script>
 </body>
 

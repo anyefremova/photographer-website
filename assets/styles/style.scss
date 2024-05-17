@@ -8,6 +8,11 @@
     padding: 10vh 4vw 0 4vw;
 
     .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 500;
         display: flex;
         flex-direction: column;
 
@@ -22,6 +27,16 @@
                     font-family: $font-family-macherie;
                     color: $beige;
                     font-size: 2em;
+                    margin-left: 3.5vw;
+                }
+
+                .navbar-toggler {
+                    color: $beige;
+                    border-color: $beige;
+
+                    .navbar-toggler-icon {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a48c80' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                    }
                 }
 
                 .header_menu {
@@ -29,14 +44,41 @@
                     font-family: $font-family-montserrat;
                     color: $black;
                     font-size: 1.2em;
+                    justify-content: space-evenly;
 
                     .header_nav {
                         display: flex;
+                        margin: 0 !important;
+                    }
+                }
+
+                .icon_social {
+                    width: 2.5vw;
+                }
+
+
+                .nav_fixed {
+                    order: 1;
+                    font-family: $font-family-montserrat;
+                    font-size: 1.2em;
+
+                    .header_nav {
+                        display: flex;
+
+                        .nav-link {
+                            color: $beige-title;
+                        }
                     }
                 }
             }
         }
     }
+
+    .header_fixed {
+        background-color: #000000;
+        box-shadow: 0 1px 15px $beige-text;
+    }
+
 
     .home_page__content {
         margin-top: 20vh;
@@ -85,8 +127,8 @@
             align-items: center;
 
             .list-group__block2 {
-                border: solid 1px #F2C8BE;
-                color: $beige-text;
+                border: solid 1px $beige-title;
+                color: $beige-title;
                 font-family: $font-family-montserrat;
                 font-size: 1.3em;
                 margin-right: 7vw;
@@ -256,7 +298,7 @@
 
     .appointment_text {
         font-family: $font-family-montserrat;
-        color: $beige-text;
+        color: $beige-title;
         font-size: 1.2em;
         width: 37vw;
     }
