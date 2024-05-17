@@ -285,26 +285,161 @@
 
 .appointment_page {
     background-color: #000000;
+    padding: 18vh 0 25vh 5.5vw;
 
     .title-block-6 {
         font-family: $font-family-macherie;
         color: $beige-title;
         font-size: 4.5em;
+        padding-bottom: 4vh;
     }
 
-    .icon_social {
-        width: 2.5vw;
-    }
+    .appointment_container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
 
-    .appointment_text {
+        .appointment_block {
+            display: flex;
+            flex-direction: column;
+            gap: 8vh;
+
+            .appointment_icons {
+                display: flex;
+                gap: 3vw;
+
+                .icon_button {
+                    padding: 0;
+                    margin: 0;
+
+                    .icon_social {
+                        width: 4vw;
+                    }
+                }
+            }
+
+            .appointment_text {
+                font-family: $font-family-montserrat;
+                color: $beige-title;
+                font-size: 1.2em;
+                width: 37vw;
+            }
+
+            .form_container {
+                background-color: rgba(54, 54, 54, 0.23);
+                border: 1.5px solid #D0B8AC;
+                width: 47vw;
+                padding: 10vh 3vw 4vh 3vw;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                font-family: $font-family-montserrat;
+                font-size: 1em;
+
+                .input_container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15vh;
+
+                    .input_first {
+                        display: flex;
+                        justify-content: space-between
+                    }
+
+                    .input_first,
+                    .input_second {
+                        width: 40vw;
+                    }
+
+                    .input_form1 {
+                        width: 15vw;
+                    }
+
+                    .input_fields {
+                        background-color: transparent;
+                        border: 0;
+                        border-bottom: 1px solid $gray;
+                        border-radius: 0;
+                    }
+
+                    input::placeholder {
+                        color: $gray;
+                    }
+
+                    input:focus {
+                        color: $beige-title;
+                        background-color: transparent;
+                        border-color: $beige-title;
+                        box-shadow: none
+                    }
+                }
+
+                .button_container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 7vh;
+
+                    .input_form {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .button_appointment {
+                        border: 1px solid $beige-title;
+                        border-radius: 0;
+                        color: $beige-title;
+                    }
+
+                    .button_text {
+                        width: 25vw;
+                        color: #585858;
+                        font-size: 0.7em;
+                        text-align: center;
+                        padding-top: 3vh;
+
+                        .text_contnet {
+                            padding: 0;
+                            margin: 0;
+
+
+                            .confidentiality {
+                                color: rgba(242, 200, 190, 0.6);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer__container {
+    background-color: $beige-title;
+    padding: 3vh 5vw 3vh 5vw;
+
+    .footer_menu {
         font-family: $font-family-montserrat;
-        color: $beige-title;
-        font-size: 1.2em;
-        width: 37vw;
-    }
+        color: #000000;
+        font-size: 0.8em;
+        display: flex;
+        justify-content: space-between;
 
-    .input_fields {
-        background-color: #000000;
-        color: $beige-title;
+        .footer_nav {
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+        }
+
+        .icon_button {
+            padding: 0;
+            margin: 0;
+
+            .icon_social {
+                width: 2vw;
+            }
+        }
     }
 }
