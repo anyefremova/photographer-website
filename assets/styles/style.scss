@@ -49,6 +49,14 @@
                     .header_nav {
                         display: flex;
                         margin: 0 !important;
+
+                        .nav-link:hover {
+                            font-family: $font-family-montserrat-bold;
+                        }
+
+                        .nav-link.active {
+                            font-family: $font-family-montserrat-bold;
+                        }
                     }
                 }
 
@@ -68,6 +76,14 @@
                         .nav-link {
                             color: $beige-title;
                         }
+
+                        .nav-link:hover {
+                            font-family: $font-family-montserrat-bold;
+                        }
+
+                        .nav-link.active {
+                            font-family: $font-family-montserrat-bold;
+                        }
                     }
                 }
             }
@@ -78,27 +94,27 @@
         background-color: #000000;
         box-shadow: 0 1px 15px $beige-text;
     }
+}
 
 
-    .home_page__content {
-        margin-top: 20vh;
+.home_page__content {
+    margin-top: 20vh;
 
-        .home_page__title {
-            font-family: $font-family-macherie;
-            color: $beige;
-            font-size: 6.5em;
-            width: 60vw;
-        }
+    .home_page__title {
+        font-family: $font-family-macherie;
+        color: $beige;
+        font-size: 6.5em;
+        width: 60vw;
+    }
 
-        .home_page__text {
-            font-family: $font-family-montserrat;
-            color: $black;
-            font-size: 1.5em;
-            width: 20vw;
-            margin-top: 18vh;
-            margin-bottom: 0;
-            padding-bottom: 85vh;
-        }
+    .home_page__text {
+        font-family: $font-family-montserrat;
+        color: $black;
+        font-size: 1.5em;
+        width: 20vw;
+        margin-top: 18vh;
+        margin-bottom: 0;
+        padding-bottom: 85vh;
     }
 }
 
