@@ -27,6 +27,11 @@
   src: url("../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf");
   font-weight: 600;
 }
+.button_content:hover {
+  color: #000000;
+  background-color: #D0B8AC;
+}
+
 .home_page {
   background: url(../images/mainpage_image.png);
   background-size: cover;
@@ -227,6 +232,11 @@
   font-size: 1.6em;
   padding: 1vh 3vw;
 }
+.portfolio_page .portfolio_container .portfolio_button .portfolio_button_content:hover {
+  color: #000000;
+  background-color: #F2C8BE;
+  transition: all 0.7s;
+}
 
 .price_page {
   background-color: #000000;
@@ -364,6 +374,7 @@
   border: 0;
   border-bottom: 1px solid #6C6C6C;
   border-radius: 0;
+  color: #D0B8AC;
 }
 .appointment_page .appointment_container .appointment_block .form_container .input_container input::-moz-placeholder {
   color: #6C6C6C;
@@ -391,6 +402,11 @@
   border: 1px solid #D0B8AC;
   border-radius: 0;
   color: #D0B8AC;
+}
+.appointment_page .appointment_container .appointment_block .form_container .button_container .button_appointment:hover {
+  color: #000000;
+  background-color: #F2C8BE;
+  transition: all 0.7s;
 }
 .appointment_page .appointment_container .appointment_block .form_container .button_container .button_text {
   width: 25vw;

@@ -1,6 +1,11 @@
 @import "./fonts";
 @import "./vars";
 
+.button_content:hover {
+    color: #000000;
+    background-color: #D0B8AC;
+}
+
 .home_page {
     background: url(../images/mainpage_image.png);
     background-size: cover;
@@ -238,6 +243,12 @@
                 font-size: 1.6em;
                 padding: 1vh 3vw;
             }
+
+            .portfolio_button_content:hover {
+                color: #000000;
+                background-color: $beige-text;
+                transition: all 0.7s;
+            }
         }
     }
 }
@@ -386,7 +397,7 @@
 
                     .input_first {
                         display: flex;
-                        justify-content: space-between
+                        justify-content: space-between;
                     }
 
                     .input_first,
@@ -403,6 +414,7 @@
                         border: 0;
                         border-bottom: 1px solid $gray;
                         border-radius: 0;
+                        color: $beige-title;
                     }
 
                     input::placeholder {
@@ -432,6 +444,12 @@
                         border: 1px solid $beige-title;
                         border-radius: 0;
                         color: $beige-title;
+                    }
+
+                    .button_appointment:hover {
+                        color: #000000;
+                        background-color: $beige-text;
+                        transition: all 0.7s;
                     }
 
                     .button_text {
