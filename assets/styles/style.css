@@ -274,6 +274,24 @@
 .reviews_page .reviews_img_block {
   display: flex;
   justify-content: center;
+  gap: 3vw;
+}
+.reviews_page .review_img {
+  max-height: 70vh;
+}
+.reviews_page .review_img2 {
+  max-height: 80vh;
+}
+@media (max-width: 575.98px) {
+  .reviews_page .carousel-item .review_img {
+    width: 75vw;
+  }
+}
+.reviews_page .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23a48c80'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+}
+.reviews_page .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23a48c80'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
 }
 
 .appointment_page {

@@ -163,10 +163,39 @@
     <section class="reviews_page" id="reviews">
         <div class="reviews_container">
             <h5 class="title-block-5">Отзывы</h5>
-            <div class="reviews_img_block">
-                <img src="assets/images/first-review.png" class="review_img" alt="Отзыв">
-                <img src="assets/images/second-review.png" class="review_img" alt="Отзыв">
-                <img src="assets/images/third-review.png" class="review_img" alt="Отзыв">
+            <div id="reviewsCarousel" class="carousel slide d-xl-none d-xxl-none" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="assets/images/first-review.png" class="review_img" alt="Отзыв">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="assets/images/second-review.png" class="review_img" alt="Отзыв">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="assets/images/third-review.png" class="review_img" alt="Отзыв">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="reviews_img_block d-none d-xl-flex d-xxl-flex">
+                <img src="assets/images/first-review.png" class="img-fluid review_img2" alt="Отзыв">
+                <img src="assets/images/second-review.png" class="img-fluid review_img2" alt="Отзыв">
+                <img src="assets/images/third-review.png" class="img-fluid review_img2" alt="Отзыв">
             </div>
         </div>
     </section>
