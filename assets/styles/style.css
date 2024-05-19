@@ -422,7 +422,7 @@
 }
 .portfolio_page .portfolio_container .portfolio_main .portfolio_fixed_photo {
   position: absolute;
-  bottom: 15%;
+  bottom: 25%;
   left: 55%;
   transform: translateX(-50%);
   z-index: 2;
@@ -430,7 +430,7 @@
 }
 @media (min-width: 992px) and (max-width: 1099.98px) {
   .portfolio_page .portfolio_container .portfolio_main .portfolio_fixed_photo {
-    bottom: 22%;
+    bottom: 30%;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
