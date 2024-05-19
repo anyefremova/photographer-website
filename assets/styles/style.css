@@ -211,11 +211,22 @@ body {
   background-color: #000000;
 }
 .about_me__page .block2_container {
-  padding-top: 10vh;
+  padding: 10vh 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-bottom: 10vh;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about_me__page .block2_container {
+    padding-top: 0;
+    align-items: center;
+    padding: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .about_me__page .block2_container {
+    align-items: center;
+  }
 }
 .about_me__page .block2_container .title-block-2 {
   font-family: "Macherie";
@@ -223,8 +234,35 @@ body {
   font-size: 4.5em;
   padding: 5vh 10vw 7vh 0;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about_me__page .block2_container .title-block-2 {
+    font-size: 6em;
+    padding: 0 0 3vh 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .about_me__page .block2_container .title-block-2 {
+    font-size: 3.5em;
+    padding: 0 0 3vh 0;
+  }
+}
 .about_me__page .block2_container .block-2__image-block {
   height: 98vh;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about_me__page .block2_container .block-2__image-block {
+    height: 85vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about_me__page .block2_container .block-2__image-block {
+    height: 40vh;
+  }
+}
+@media (max-width: 767.98px) {
+  .about_me__page .block2_container .block-2__image-block {
+    height: 45vh;
+  }
 }
 .about_me__page .block2_container .block-2__text-block {
   align-items: center;
@@ -237,8 +275,38 @@ body {
   margin-right: 7vw;
   padding: 3vh 3vw;
 }
-.about_me__page .block2_container .block-2__text-block .list-group__block2 .list-item {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about_me__page .block2_container .block-2__text-block .list-group__block2 {
+    font-size: 1.2em;
+    margin-right: 3vw;
+    padding: 2vh 3vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about_me__page .block2_container .block-2__text-block .list-group__block2 {
+    margin: 4vh 12vw;
+    padding: 1vh 3vw 1vh 5vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .about_me__page .block2_container .block-2__text-block .list-group__block2 {
+    font-size: 1em;
+    margin: 4vh 7vw;
+    padding: 1vh 3vw 1vh 7vw;
+  }
+}
+.about_me__page .block2_container .block-2__text-block .list-item {
   padding: 1.5vh 0;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about_me__page .block2_container .block-2__text-block .list-item {
+    padding: 0.5vh 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .about_me__page .block2_container .block-2__text-block .list-item {
+    padding: 0.6vh 0;
+  }
 }
 
 .portfolio_page {
