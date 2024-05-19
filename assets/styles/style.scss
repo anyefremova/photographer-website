@@ -1,10 +1,10 @@
 @import "./fonts";
 @import "./vars";
 
-html,
-body {
-    overflow-x: hidden;
-}
+// html,
+// body {
+//     overflow-x: hidden;
+// }
 
 .header {
     position: fixed;
@@ -230,7 +230,8 @@ body {
             height: 98vh;
 
             @media (min-width: 992px) and (max-width: 1199.98px) {
-                height: 85vh;
+                min-width: 30vw;
+                height: auto;
             }
 
             @media (min-width: 768px) and (max-width: 991.98px) {
@@ -294,6 +295,12 @@ body {
         color: $beige-title;
         font-size: 4.5em;
         padding: 8vh 0 5vh 9vw;
+
+        @media (max-width: 767.98px) {
+            font-size: 3em;
+            text-align: center;
+            padding: 0 0 5vh 0;
+        }
     }
 
     .portfolio_container {
@@ -302,6 +309,18 @@ body {
 
         .portfolio_main {
             padding-bottom: 40vh;
+
+            @media (min-width: 992px) and (max-width: 1099.98px) {
+                padding-bottom: 30vh;
+            }
+
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                padding-bottom: 10vh;
+            }
+
+            @media (max-width: 767.98px) {
+                padding-bottom: 3vh;
+            }
 
             .portfolio_first {
                 position: relative;
@@ -314,6 +333,34 @@ body {
 
                     .portfolio_part1 {
                         margin-right: 6vw;
+
+                        .portfolio_img1 {
+                            @media (min-width: 992px) and (max-width: 1099.98px) {
+                                width: 40vw;
+                            }
+
+                            @media (min-width: 768px) and (max-width: 991.98px) {
+                                width: 47vw;
+                            }
+
+                            @media (max-width: 767.98px) {
+                                width: 47vw;
+                            }
+                        }
+                    }
+
+                    .portfolio_img2 {
+                        @media (min-width: 992px) and (max-width: 1099.98px) {
+                            width: 27vw;
+                        }
+
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            width: 32vw;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            width: 32vw;
+                        }
                     }
 
                     .portfolio_text {
@@ -323,6 +370,10 @@ body {
                         opacity: 0.8;
                         display: flex;
                         flex-direction: column;
+
+                        @media (max-width: 767.98px) {
+                            font-size: 1.2em;
+                        }
                     }
 
                     .portfolio_text_element1 {
@@ -339,6 +390,16 @@ body {
                         display: flex;
                         justify-content: flex-end;
                     }
+
+                    .portfolio_text_content {
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            margin-bottom: 0.5vh;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            margin-bottom: 0.3vh;
+                        }
+                    }
                 }
             }
 
@@ -348,7 +409,40 @@ body {
                 left: 55%;
                 transform: translateX(-50%);
                 z-index: 2;
-                margin-bottom: 20vh;
+                margin-bottom: 0;
+
+                @media (min-width: 992px) and (max-width: 1099.98px) {
+                    bottom: 22%;
+                }
+
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    bottom: 0;
+                    top: 40%;
+                }
+
+                @media (max-width: 767.98px) {
+                    position: relative;
+                    text-align: center;
+                    bottom: 0;
+                    left: 0;
+                    transform: translateX(0%);
+                    z-index: 0;
+                    margin-top: 3vh;
+                }
+
+                .portfolio_img3 {
+                    @media (min-width: 992px) and (max-width: 1099.98px) {
+                        width: 16vw;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 991.98px) {
+                        width: 20vw;
+                    }
+
+                    @media (max-width: 767.98px) {
+                        width: 30vw;
+                    }
+                }
             }
         }
 
@@ -356,6 +450,14 @@ body {
             display: flex;
             justify-content: center;
             margin-bottom: 10vh;
+
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                margin: 5vh
+            }
+
+            @media (max-width: 767.98px) {
+                margin-bottom: 0;
+            }
 
             .portfolio_button_content {
                 font-family: $font-family-montserrat;
@@ -365,6 +467,19 @@ body {
                 width: 22vw;
                 font-size: 1.6em;
                 padding: 1vh 3vw;
+
+                @media (min-width: 992px) and (max-width: 1250px) {
+                    width: 28vw;
+                }
+
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    width: 35vw;
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 60vw;
+                    font-size: 1.3em;
+                }
             }
 
             .portfolio_button_content:hover {
