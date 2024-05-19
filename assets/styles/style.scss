@@ -1,9 +1,124 @@
 @import "./fonts";
 @import "./vars";
 
-.button_content:hover {
-    color: #000000;
-    background-color: #D0B8AC;
+html,
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+
+    .header_container {
+        flex-grow: 1;
+
+        .header_navbar {
+            display: flex;
+            background-color: transparent;
+
+            .header_logo {
+                font-family: $font-family-macherie;
+                color: $beige;
+                font-size: 2em;
+                margin-left: 3.5vw;
+
+                @media (max-width: 767.98px) {
+                    font-size: 1.5em;
+                }
+            }
+
+            .navbar-toggler {
+                border-color: $gray;
+
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%236C6C6C' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                }
+            }
+
+            .header_menu {
+                order: 1;
+                font-family: $font-family-montserrat;
+                color: $black;
+                font-size: 1.2em;
+                justify-content: space-evenly;
+
+                .header_nav {
+                    display: flex;
+                    margin: 0 !important;
+
+                    .nav-link:hover {
+                        font-family: $font-family-montserrat-bold;
+                    }
+
+                    .nav-link.active {
+                        font-family: $font-family-montserrat-bold;
+                    }
+                }
+            }
+
+            .navbar-collapse {
+                text-align: center;
+
+                .navbar-nav {
+                    text-align: center;
+                }
+            }
+
+            .icon_social {
+                width: 2.5vw;
+
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    width: 4.5vw;
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 7.8vw;
+                }
+            }
+
+            .nav_fixed {
+                order: 1;
+                font-family: $font-family-montserrat;
+                font-size: 1.2em;
+
+                .header_nav {
+                    display: flex;
+
+                    .nav-link {
+                        color: $beige-title;
+                    }
+
+                    .nav-link:hover {
+                        font-family: $font-family-montserrat-bold;
+                    }
+
+                    .nav-link.active {
+                        font-family: $font-family-montserrat-bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header_fixed {
+    background-color: #000000;
+    box-shadow: 0 0 15px $beige-text;
+}
+
+.toggler_fixed {
+    color: $beige !important;
+    border-color: $beige !important;
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23A48C80' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
 }
 
 .home_page {
@@ -12,114 +127,66 @@
     min-height: 100vh;
     padding: 10vh 4vw 0 4vw;
 
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        z-index: 500;
-        display: flex;
-        flex-direction: column;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        background: url(../images/tab-main-img.png);
+        background-size: cover;
+    }
 
-        .header_container {
-            flex-grow: 1;
+    @media (max-width: 767.98px) {
+        background: url(../images/mobile-main-img.png);
+        background-size: cover;
+    }
 
-            .header_navbar {
-                display: flex;
-                background-color: transparent;
+    .home_page__content {
+        margin-top: 20vh;
 
-                .header_logo {
-                    font-family: $font-family-macherie;
-                    color: $beige;
-                    font-size: 2em;
-                    margin-left: 3.5vw;
-                }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            margin-top: 22vh;
+        }
 
-                .navbar-toggler {
-                    color: $beige;
-                    border-color: $beige;
+        @media (max-width: 767.98px) {
+            margin-top: 28vh;
+        }
 
-                    .navbar-toggler-icon {
-                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a48c80' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-                    }
-                }
+        .home_page__title {
+            font-family: $font-family-macherie;
+            color: $beige;
+            font-size: 6.5em;
+            width: 60vw;
 
-                .header_menu {
-                    order: 1;
-                    font-family: $font-family-montserrat;
-                    color: $black;
-                    font-size: 1.2em;
-                    justify-content: space-evenly;
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                font-size: 5em;
+            }
 
-                    .header_nav {
-                        display: flex;
-                        margin: 0 !important;
-
-                        .nav-link:hover {
-                            font-family: $font-family-montserrat-bold;
-                        }
-
-                        .nav-link.active {
-                            font-family: $font-family-montserrat-bold;
-                        }
-                    }
-                }
-
-                .icon_social {
-                    width: 2.5vw;
-                }
-
-
-                .nav_fixed {
-                    order: 1;
-                    font-family: $font-family-montserrat;
-                    font-size: 1.2em;
-
-                    .header_nav {
-                        display: flex;
-
-                        .nav-link {
-                            color: $beige-title;
-                        }
-
-                        .nav-link:hover {
-                            font-family: $font-family-montserrat-bold;
-                        }
-
-                        .nav-link.active {
-                            font-family: $font-family-montserrat-bold;
-                        }
-                    }
-                }
+            @media (max-width: 767.98px) {
+                font-size: 3.1em;
             }
         }
-    }
 
-    .header_fixed {
-        background-color: #000000;
-        box-shadow: 0 1px 15px $beige-text;
-    }
-}
+        .home_page__text {
+            font-family: $font-family-montserrat;
+            color: $black;
+            font-size: 1.5em;
+            width: 20vw;
+            margin-top: 18vh;
+            margin-bottom: 0;
+            padding-bottom: 85vh;
 
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                width: 31vw;
+            }
 
-.home_page__content {
-    margin-top: 20vh;
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                margin-top: 10vh;
+                width: 30vw;
+            }
 
-    .home_page__title {
-        font-family: $font-family-macherie;
-        color: $beige;
-        font-size: 6.5em;
-        width: 60vw;
-    }
-
-    .home_page__text {
-        font-family: $font-family-montserrat;
-        color: $black;
-        font-size: 1.5em;
-        width: 20vw;
-        margin-top: 18vh;
-        margin-bottom: 0;
-        padding-bottom: 85vh;
+            @media (max-width: 767.98px) {
+                font-size: 1.3em;
+                margin-top: 15vh;
+                width: 80vw;
+            }
+        }
     }
 }
 
@@ -252,6 +319,8 @@
         }
     }
 }
+
+
 
 .price_page {
     background-color: #000000;
@@ -425,7 +494,7 @@
                         color: $beige-title;
                         background-color: transparent;
                         border-color: $beige-title;
-                        box-shadow: none
+                        box-shadow: none;
                     }
                 }
 

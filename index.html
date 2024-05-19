@@ -14,54 +14,53 @@
 </head>
 
 <body>
-    <div class="home_page">
-        <header class="header" id="mainHeader">
-            <div class="header_container">
-                <nav class="navbar navbar-light bg-lignt navbar-expand-lg header_navbar">
-                    <div class="container-fluid">
-                        <a class="navbar-brand header_logo" href="#">Starkovasphoto</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Переключатель навигации">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse header_menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 header_nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#aboutme">Обо мне</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Портфолио</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#price">Прайс</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#reviews">Отзывы</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#appointment">Записаться</a>
-                                </li>
-                            </ul>
-                            <div class="appointment_icons">
-                                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
-                                    href="https://vk.com/starkovasashaa" role="button"><img
-                                        src="assets/images/icons-vk.png" class="icon_social"
-                                        alt="Логотип ВКонтакте"></a>
-                                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
-                                    href="https://t.me/starkovasasha" role="button"><img
-                                        src="assets/images/icons-telegram.png" class="icon_social"
-                                        alt="Логотип Телеграм"></a>
-                                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
-                                    href="https://www.instagram.com/starkovasphoto" role="button"><img
-                                        src="assets/images/icons-instagram.png" class="icon_social"
-                                        alt="Логотип Инстаграм"></a>
-                            </div>
+    <header class="header" id="mainHeader">
+        <div class="header_container">
+            <nav class="navbar navbar-light bg-lignt navbar-expand-xl header_navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand header_logo" href="#">Starkovasphoto</a>
+                    <button class="navbar-toggler" id="toggler-header" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse header_menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 header_nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutme">Обо мне</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Портфолио</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#price">Прайс</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#appointment">Записаться</a>
+                            </li>
+                        </ul>
+                        <div class="appointment_icons">
+                            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
+                                href="https://vk.com/starkovasashaa" role="button"><img src="assets/images/icons-vk.png"
+                                    class="icon_social" alt="Логотип ВКонтакте"></a>
+                            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
+                                href="https://t.me/starkovasasha" role="button"><img
+                                    src="assets/images/icons-telegram.png" class="icon_social"
+                                    alt="Логотип Телеграм"></a>
+                            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
+                                href="https://www.instagram.com/starkovasphoto" role="button"><img
+                                    src="assets/images/icons-instagram.png" class="icon_social"
+                                    alt="Логотип Инстаграм"></a>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="home_page">
         <div class="home_page__content">
             <h1 class="home_page__title">Александра Старкова</h1>
             <p class="home_page__text">Рыжая девушка, готовая запечатлеть истинную красоту</p>
@@ -145,7 +144,8 @@
                                     <li class="list-item">1,5 часа съемки</li>
                                     <li class="list-item">Съемка в студии или на улице в светлое время (студия
                                         оплачивается отдельно)</li>
-                                    <li class="list-item">Итоговый результат: 50-60 фото в ретуши и цветокоррекции (+
+                                    <li class="list-item">Итоговый результат: 50-60 фото в ретуши и цветокоррекции
+                                        (+
                                         ч/б)
                                     </li>
                                     <li class="list-item">Готовые фотографии загружаю в течение 2-х недель в
@@ -266,7 +266,6 @@
                 <img src="assets/images/appointment-img.png" class="img-appointment" alt="Фото модели">
             </div>
         </div>
-        </div>
     </section>
     <footer class="footer">
         <div class="footer__container">
@@ -346,6 +345,16 @@
                 nav.classList.add('nav_fixed');
             } else {
                 nav.classList.remove('nav_fixed');
+            }
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const toggler = document.getElementById('toggler-header');
+            if (window.scrollY > 0) {
+                toggler.classList.add('toggler_fixed');
+            } else {
+                toggler.classList.remove('toggler_fixed');
             }
         });
     </script>
