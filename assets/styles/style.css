@@ -314,6 +314,11 @@
   font-size: 4.5em;
   padding: 8vh 0 5vh 9vw;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .portfolio_page .title-block-3 {
+    font-size: 6em;
+  }
+}
 @media (max-width: 767.98px) {
   .portfolio_page .title-block-3 {
     font-size: 3em;
@@ -514,6 +519,32 @@
 .price_page {
   background-color: #000000;
 }
+@media (min-width: 992px) and (max-width: 1050px) {
+  .price_page {
+    padding: 3vh 2vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .price_page {
+    padding: 3vh 2vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .price_page {
+    padding: 3vh 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1050px) {
+  .price_page .block-4__image-block {
+    min-width: 30vw;
+    height: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .price_page .block-4__image-block {
+    padding: 0 17vw;
+  }
+}
 .price_page .block-4__card-body {
   display: flex;
   flex-direction: column;
@@ -525,23 +556,101 @@
   color: #D0B8AC;
   font-size: 4.5em;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .price_page .block-4__card-body .title-block-4 {
+    margin-top: 3vh;
+    font-size: 6em;
+  }
+}
+@media (max-width: 767.98px) {
+  .price_page .block-4__card-body .title-block-4 {
+    font-size: 3.5em;
+    margin-top: 3vh;
+  }
+}
 .price_page .block-4__card-body .price_border {
   border: solid 1px #F2C8BE;
   margin: 5vh 5vw 5vh 0;
   padding: 3vh 2vw;
 }
+@media (min-width: 992px) and (max-width: 1050px) {
+  .price_page .block-4__card-body .price_border {
+    margin: 3vh 3vw;
+    padding: 3vh 1vw 1vh 3vw;
+    width: 45vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .price_page .block-4__card-body .price_border {
+    margin: 3vh 3vw;
+    padding: 3vh 1vw 0 3vw;
+    width: 93vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .price_page .block-4__card-body .price_border {
+    margin: 3vh 3vw;
+    padding: 3vh 2.5vw 0 3vw;
+    width: 93vw;
+  }
+}
 .price_page .block-4__card-body .price_border .price_list_text {
   font-family: "Montserrat-ExtraBold", sans-serif;
   font-size: 1.6em;
+}
+@media (max-width: 767.98px) {
+  .price_page .block-4__card-body .price_border .price_list_text {
+    font-size: 1.4em;
+  }
 }
 .price_page .block-4__card-body .price_border .list-group__block4 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.3em;
 }
-.price_page .block-4__card-body .price_text {
+@media (min-width: 992px) and (max-width: 1050px) {
+  .price_page .block-4__card-body .price_border .list-group__block4 {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .price_page .block-4__card-body .price_border .list-group__block4 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 767.98px) {
+  .price_page .block-4__card-body .price_border .list-group__block4 {
+    font-size: 1em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1050px) {
+  .price_page .block-4__card-body .price_border .list-item {
+    padding-bottom: 1vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .price_page .block-4__card-body .price_border .list-item {
+    padding-bottom: 1vh;
+  }
+}
+@media (max-width: 767.98px) {
+  .price_page .block-4__card-body .price_border .list-item {
+    padding-bottom: 1vh;
+  }
+}
+.price_page .price_text {
   font-family: "Montserrat-SemiBold", sans-serif;
   text-decoration: underline;
   font-size: 2em;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .price_page .price_text {
+    font-size: 3em;
+  }
+}
+@media (max-width: 767.98px) {
+  .price_page .price_text {
+    font-size: 1.8em;
+  }
 }
 
 .reviews_page {

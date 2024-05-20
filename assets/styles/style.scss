@@ -296,6 +296,10 @@
         font-size: 4.5em;
         padding: 8vh 0 5vh 9vw;
 
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            font-size: 6em;
+        }
+
         @media (max-width: 767.98px) {
             font-size: 3em;
             text-align: center;
@@ -491,10 +495,31 @@
     }
 }
 
-
-
 .price_page {
     background-color: #000000;
+
+    @media (min-width: 992px) and (max-width: 1050px) {
+        padding: 3vh 2vw;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        padding: 3vh 2vw;
+    }
+
+    @media (max-width: 767.98px) {
+        padding: 3vh 0;
+    }
+
+    .block-4__image-block {
+        @media (min-width: 992px) and (max-width: 1050px) {
+            min-width: 30vw;
+            height: auto;
+        }
+
+        @media (max-width: 767.98px) {
+            padding: 0 17vw;
+        }
+    }
 
     .block-4__card-body {
         display: flex;
@@ -506,6 +531,16 @@
             font-family: $font-family-macherie;
             color: $beige-title;
             font-size: 4.5em;
+
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                margin-top: 3vh;
+                font-size: 6em;
+            }
+
+            @media (max-width: 767.98px) {
+                font-size: 3.5em;
+                margin-top: 3vh;
+            }
         }
 
         .price_border {
@@ -513,22 +548,78 @@
             margin: 5vh 5vw 5vh 0;
             padding: 3vh 2vw;
 
+            @media (min-width: 992px) and (max-width: 1050px) {
+                margin: 3vh 3vw;
+                padding: 3vh 1vw 1vh 3vw;
+                width: 45vw;
+            }
+
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                margin: 3vh 3vw;
+                padding: 3vh 1vw 0 3vw;
+                width: 93vw;
+            }
+
+            @media (max-width: 767.98px) {
+                margin: 3vh 3vw;
+                padding: 3vh 2.5vw 0 3vw;
+                width: 93vw;
+            }
+
             .price_list_text {
                 font-family: $font-family-montserrat-extrabold;
                 font-size: 1.6em;
+
+                @media (max-width: 767.98px) {
+                    font-size: 1.4em;
+                }
             }
 
             .list-group__block4 {
                 font-family: $font-family-montserrat;
                 font-size: 1.3em;
+
+                @media (min-width: 992px) and (max-width: 1050px) {
+                    font-size: 1.1em;
+                }
+
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    font-size: 1.5em;
+                }
+
+                @media (max-width: 767.98px) {
+                    font-size: 1em;
+                }
             }
 
+            .list-item {
+                @media (min-width: 992px) and (max-width: 1050px) {
+                    padding-bottom: 1vh;
+                }
+
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    padding-bottom: 1vh;
+                }
+
+                @media (max-width: 767.98px) {
+                    padding-bottom: 1vh;
+                }
+            }
         }
 
-        .price_text {
-            font-family: $font-family-montserrat-semibold;
-            text-decoration: underline;
-            font-size: 2em;
+    }
+
+    .price_text {
+        font-family: $font-family-montserrat-semibold;
+        text-decoration: underline;
+        font-size: 2em;
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            font-size: 3em;
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 1.8em;
         }
     }
 }
