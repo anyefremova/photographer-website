@@ -1,10 +1,10 @@
 @import "./fonts";
 @import "./vars";
 
-// html,
-// body {
-//     overflow-x: hidden;
-// }
+html,
+body {
+    overflow-x: hidden;
+}
 
 .header {
     position: fixed;
@@ -1063,6 +1063,26 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.portfolio-page {
+    .gallery {
+        background-color: #000000;
+        padding-top: 7vh;
+
+        .header_portfolio {
+            color: $beige-title !important;
+        }
+
+        .gallery-element {
+            padding: 2vh 2vw;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
         }
     }
 }

@@ -27,6 +27,11 @@
   src: url("../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf");
   font-weight: 600;
 }
+html,
+body {
+  overflow-x: hidden;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -1104,4 +1109,19 @@
   .footer__container .footer_menu .appointment_icons .icon_button .icon_social {
     width: 5vw;
   }
+}
+
+.portfolio-page .gallery {
+  background-color: #000000;
+  padding-top: 7vh;
+}
+.portfolio-page .gallery .header_portfolio {
+  color: #D0B8AC !important;
+}
+.portfolio-page .gallery .gallery-element {
+  padding: 2vh 2vw;
+}
+.portfolio-page .gallery .gallery img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
