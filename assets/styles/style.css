@@ -947,6 +947,11 @@
     font-size: 1.2em;
   }
 }
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_fields {
+    display: flex;
+  }
+}
 .appointment_page .appointment_container .appointment_block .form_container .input_container input::-moz-placeholder {
   color: #6C6C6C;
 }
@@ -1040,15 +1045,63 @@
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer__container .footer_menu {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer__container .footer_menu {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75em;
+  }
+}
 .footer__container .footer_menu .footer_nav {
   display: flex;
   flex-direction: row;
   gap: 2vw;
 }
-.footer__container .footer_menu .icon_button {
+@media (max-width: 767.98px) {
+  .footer__container .footer_menu .footer_nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    row-gap: 1vh;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer__container .footer_menu .footer_nav .nav-link {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer__container .footer_menu .appointment_icons {
+    margin-top: 1.5vh;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer__container .footer_menu .appointment_icons {
+    margin-top: 1.7vh;
+  }
+}
+.footer__container .footer_menu .appointment_icons .icon_button {
   padding: 0;
   margin: 0;
 }
-.footer__container .footer_menu .icon_button .icon_social {
+.footer__container .footer_menu .appointment_icons .icon_button .icon_social {
   width: 2vw;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer__container .footer_menu .appointment_icons .icon_button .icon_social {
+    width: 3.3vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer__container .footer_menu .appointment_icons .icon_button .icon_social {
+    width: 5vw;
+  }
 }/*# sourceMappingURL=style.css.map */
