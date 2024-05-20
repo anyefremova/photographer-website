@@ -682,7 +682,7 @@
   .reviews_page .title-block-5 {
     font-size: 3.5em;
     text-align: center;
-    margin: 0 0 5vh 0;
+    margin: 0 0 3vh 0;
   }
 }
 .reviews_page .reviews_img_block {
@@ -712,25 +712,86 @@
   background-color: #000000;
   padding: 18vh 0 25vh 5.5vw;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page {
+    padding: 18vh 2vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page {
+    padding: 18vh 2vw;
+  }
+}
 .appointment_page .title-block-6 {
   font-family: "Macherie";
   color: #D0B8AC;
   font-size: 4.5em;
   padding-bottom: 4vh;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .title-block-6 {
+    text-align: center;
+    font-size: 6em;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .title-block-6 {
+    text-align: center;
+    font-size: 3.5em;
+  }
+}
 .appointment_page .appointment_container {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container {
+    justify-content: center;
+    align-items: normal;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container {
+    justify-content: center;
+    align-items: normal;
+  }
 }
 .appointment_page .appointment_container .appointment_block {
   display: flex;
   flex-direction: column;
   gap: 8vh;
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .appointment_page .appointment_container .appointment_block {
+    gap: 4vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block {
+    gap: 4vh;
+    align-items: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block {
+    gap: 3vh;
+    align-items: center;
+  }
+}
 .appointment_page .appointment_container .appointment_block .appointment_icons {
   display: flex;
   gap: 3vw;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .appointment_icons {
+    gap: 4vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .appointment_icons {
+    gap: 5vw;
+  }
 }
 .appointment_page .appointment_container .appointment_block .appointment_icons .icon_button {
   padding: 0;
@@ -739,11 +800,35 @@
 .appointment_page .appointment_container .appointment_block .appointment_icons .icon_button .icon_social {
   width: 4vw;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .appointment_icons .icon_button .icon_social {
+    width: 7.5vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .appointment_icons .icon_button .icon_social {
+    width: 12vw;
+  }
+}
 .appointment_page .appointment_container .appointment_block .appointment_text {
   font-family: "Montserrat", sans-serif;
   color: #D0B8AC;
   font-size: 1.2em;
   width: 37vw;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .appointment_text {
+    width: 80vw;
+    font-size: 1.8em;
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .appointment_text {
+    width: 90vw;
+    font-size: 1em;
+    text-align: center;
+  }
 }
 .appointment_page .appointment_container .appointment_block .form_container {
   background-color: rgba(54, 54, 54, 0.23);
@@ -757,21 +842,98 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container {
+    width: 60vw;
+    padding: 7vh 1vw 4vh 1vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container {
+    width: 80vw;
+    padding: 7vh 1vw 4vh 1vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container {
+    width: 90vw;
+    padding: 7vh 1vw 4vh 1vw;
+  }
+}
 .appointment_page .appointment_container .appointment_block .form_container .input_container {
   display: flex;
   flex-direction: column;
   gap: 15vh;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container {
+    gap: 10vh;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container {
+    gap: 7vh;
+  }
+}
 .appointment_page .appointment_container .appointment_block .form_container .input_container .input_first {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_first {
+    flex-direction: column;
+    gap: 7vh;
+  }
 }
 .appointment_page .appointment_container .appointment_block .form_container .input_container .input_first,
 .appointment_page .appointment_container .appointment_block .form_container .input_container .input_second {
   width: 40vw;
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_first,
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_second {
+    width: 47vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_first,
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_second {
+    width: 62vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_first,
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_second {
+    width: 70vw;
+  }
+}
 .appointment_page .appointment_container .appointment_block .form_container .input_container .input_form1 {
   width: 15vw;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_form1 {
+    width: 17vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_form1 {
+    width: 25vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_form1 {
+    width: 30vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input-tel-2 {
+    width: 50vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_form2 {
+    width: 50vw;
+  }
 }
 .appointment_page .appointment_container .appointment_block .form_container .input_container .input_fields {
   background-color: transparent;
@@ -779,6 +941,11 @@
   border-bottom: 1px solid #6C6C6C;
   border-radius: 0;
   color: #D0B8AC;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .input_container .input_fields {
+    font-size: 1.2em;
+  }
 }
 .appointment_page .appointment_container .appointment_block .form_container .input_container input::-moz-placeholder {
   color: #6C6C6C;
@@ -798,6 +965,11 @@
   align-items: center;
   padding-top: 7vh;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .button_container {
+    padding-top: 5vh;
+  }
+}
 .appointment_page .appointment_container .appointment_block .form_container .button_container .input_form {
   display: flex;
   justify-content: center;
@@ -806,6 +978,13 @@
   border: 1px solid #D0B8AC;
   border-radius: 0;
   color: #D0B8AC;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .button_container .button_appointment {
+    width: 20vw;
+    height: 4vh;
+    font-size: 1.2em;
+  }
 }
 .appointment_page .appointment_container .appointment_block .form_container .button_container .button_appointment:hover {
   color: #000000;
@@ -819,6 +998,23 @@
   text-align: center;
   padding-top: 3vh;
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .button_container .button_text {
+    width: 30vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .button_container .button_text {
+    width: 50vw;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment_page .appointment_container .appointment_block .form_container .button_container .button_text {
+    width: 75vw;
+    font-size: 0.65em;
+  }
+}
 .appointment_page .appointment_container .appointment_block .form_container .button_container .button_text .text_contnet {
   padding: 0;
   margin: 0;
@@ -826,6 +1022,11 @@
 .appointment_page .appointment_container .appointment_block .form_container .button_container .button_text .text_contnet .confidentiality {
   color: rgba(242, 200, 190, 0.6);
   text-decoration: none;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .appointment_page .appointment_container .appointment_img {
+    width: 30vw;
+  }
 }
 
 .footer__container {

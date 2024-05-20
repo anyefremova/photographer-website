@@ -231,7 +231,7 @@
                                             Пожалуйста, введите имя
                                         </div>
                                     </div>
-                                    <div class="col-md-6 input_form1">
+                                    <div class="col-md-6 input_form1 input-tel-2">
                                         <input type="tel" class="form-control input_fields" id="inputPhone"
                                             placeholder="Номер телефона" aria-label="Телефон" required>
                                         <div class="invalid-feedback">
@@ -239,10 +239,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="input_second">
+                                <div class="input_second ">
                                     <div class="col-12 input_form2">
-                                        <input type="text" class="form-control input_fields" id="inputMessage"
-                                            placeholder="Предпочтительный способ связи, любые пожелания">
+                                        <input type="text"
+                                            class="form-control input_fields d-none d-sm-flex d-lg-flex d-xl-flex d-xxl-flex"
+                                            id="inputMessage" placeholder="Предпочтительный способ связи">
+                                        <input type="text" class="form-control input_fields d-none d-xs-flex"
+                                            id="inputMessage" placeholder="Cпособ связи">
                                     </div>
                                 </div>
                             </div>
@@ -262,8 +265,8 @@
                     </form>
                 </div>
             </div>
-            <div class="appointment_img">
-                <img src="assets/images/appointment-img.png" class="img-appointment" alt="Фото модели">
+            <div class="appointment_img d-none d-lg-flex d-xl-flex d-xxl-flex">
+                <img src="assets/images/appointment-img.png" class="img-appointment img-fluid" alt="Фото модели">
             </div>
         </div>
     </section>

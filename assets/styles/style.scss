@@ -649,7 +649,7 @@
         @media (max-width: 767.98px) {
             font-size: 3.5em;
             text-align: center;
-            margin: 0 0 5vh 0;
+            margin: 0 0 3vh 0;
         }
     }
 
@@ -689,11 +689,29 @@
     background-color: #000000;
     padding: 18vh 0 25vh 5.5vw;
 
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        padding: 18vh 2vw;
+    }
+
+    @media (max-width: 767.98px) {
+        padding: 18vh 2vw;
+    }
+
     .title-block-6 {
         font-family: $font-family-macherie;
         color: $beige-title;
         font-size: 4.5em;
         padding-bottom: 4vh;
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            text-align: center;
+            font-size: 6em;
+        }
+
+        @media (max-width: 767.98px) {
+            text-align: center;
+            font-size: 3.5em;
+        }
     }
 
     .appointment_container {
@@ -701,14 +719,46 @@
         align-items: flex-end;
         justify-content: space-between;
 
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            justify-content: center;
+            align-items: normal;
+        }
+
+        @media (max-width: 767.98px) {
+            justify-content: center;
+            align-items: normal;
+        }
+
         .appointment_block {
             display: flex;
             flex-direction: column;
             gap: 8vh;
 
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                gap: 4vh;
+            }
+
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                gap: 4vh;
+                align-items: center;
+            }
+
+            @media (max-width: 767.98px) {
+                gap: 3vh;
+                align-items: center;
+            }
+
             .appointment_icons {
                 display: flex;
                 gap: 3vw;
+
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    gap: 4vw;
+                }
+
+                @media (max-width: 767.98px) {
+                    gap: 5vw;
+                }
 
                 .icon_button {
                     padding: 0;
@@ -716,6 +766,14 @@
 
                     .icon_social {
                         width: 4vw;
+
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            width: 7.5vw;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            width: 12vw;
+                        }
                     }
                 }
             }
@@ -725,6 +783,18 @@
                 color: $beige-title;
                 font-size: 1.2em;
                 width: 37vw;
+
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    width: 80vw;
+                    font-size: 1.8em;
+                    text-align: center;
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 90vw;
+                    font-size: 1em;
+                    text-align: center;
+                }
             }
 
             .form_container {
@@ -739,23 +809,87 @@
                 font-family: $font-family-montserrat;
                 font-size: 1em;
 
+                @media (min-width: 992px) and (max-width: 1199.98px) {
+                    width: 60vw;
+                    padding: 7vh 1vw 4vh 1vw;
+                }
+
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    width: 80vw;
+                    padding: 7vh 1vw 4vh 1vw;
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 90vw;
+                    padding: 7vh 1vw 4vh 1vw;
+                }
+
                 .input_container {
                     display: flex;
                     flex-direction: column;
                     gap: 15vh;
 
+                    @media (min-width: 768px) and (max-width: 991.98px) {
+                        gap: 10vh;
+                    }
+
+                    @media (max-width: 767.98px) {
+                        gap: 7vh;
+                    }
+
                     .input_first {
                         display: flex;
                         justify-content: space-between;
+
+                        @media (max-width: 767.98px) {
+                            flex-direction: column;
+                            gap: 7vh;
+                        }
                     }
 
                     .input_first,
                     .input_second {
                         width: 40vw;
+
+                        @media (min-width: 992px) and (max-width: 1199.98px) {
+                            width: 47vw;
+                        }
+
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            width: 62vw;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            width: 70vw;
+                        }
                     }
 
                     .input_form1 {
                         width: 15vw;
+
+                        @media (min-width: 992px) and (max-width: 1199.98px) {
+                            width: 17vw;
+                        }
+
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            width: 25vw;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            width: 30vw;
+                        }
+                    }
+
+                    .input-tel-2 {
+                        @media (max-width: 767.98px) {
+                            width: 50vw;
+                        }
+                    }
+
+                    .input_form2 {
+                        @media (max-width: 767.98px) {
+                            width: 50vw;
+                        }
                     }
 
                     .input_fields {
@@ -764,6 +898,10 @@
                         border-bottom: 1px solid $gray;
                         border-radius: 0;
                         color: $beige-title;
+
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            font-size: 1.2em;
+                        }
                     }
 
                     input::placeholder {
@@ -784,6 +922,10 @@
                     align-items: center;
                     padding-top: 7vh;
 
+                    @media (min-width: 768px) and (max-width: 991.98px) {
+                        padding-top: 5vh;
+                    }
+
                     .input_form {
                         display: flex;
                         justify-content: center;
@@ -793,6 +935,12 @@
                         border: 1px solid $beige-title;
                         border-radius: 0;
                         color: $beige-title;
+
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            width: 20vw;
+                            height: 4vh;
+                            font-size: 1.2em;
+                        }
                     }
 
                     .button_appointment:hover {
@@ -808,10 +956,23 @@
                         text-align: center;
                         padding-top: 3vh;
 
+                        @media (min-width: 992px) and (max-width: 1199.98px) {
+                            width: 30vw;
+                        }
+
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            width: 50vw;
+                            font-size: 0.9em;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            width: 75vw;
+                            font-size: 0.65em;
+                        }
+
                         .text_contnet {
                             padding: 0;
                             margin: 0;
-
 
                             .confidentiality {
                                 color: rgba(242, 200, 190, 0.6);
@@ -820,6 +981,12 @@
                         }
                     }
                 }
+            }
+        }
+
+        .appointment_img {
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                width: 30vw;
             }
         }
     }
