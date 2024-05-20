@@ -657,11 +657,33 @@
   background-color: #000000;
   padding-top: 22vh;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .reviews_page {
+    padding-top: 15vh;
+  }
+}
+@media (max-width: 767.98px) {
+  .reviews_page {
+    padding-top: 15vh;
+  }
+}
 .reviews_page .title-block-5 {
   font-family: "Macherie";
   color: #D0B8AC;
   font-size: 4.5em;
   margin: 0 0 8vh 7vw;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .reviews_page .title-block-5 {
+    font-size: 6em;
+  }
+}
+@media (max-width: 767.98px) {
+  .reviews_page .title-block-5 {
+    font-size: 3.5em;
+    text-align: center;
+    margin: 0 0 5vh 0;
+  }
 }
 .reviews_page .reviews_img_block {
   display: flex;

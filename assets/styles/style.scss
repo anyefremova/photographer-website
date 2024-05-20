@@ -628,11 +628,29 @@
     background-color: #000000;
     padding-top: 22vh;
 
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        padding-top: 15vh;
+    }
+
+    @media (max-width: 767.98px) {
+        padding-top: 15vh;
+    }
+
     .title-block-5 {
         font-family: $font-family-macherie;
         color: $beige-title;
         font-size: 4.5em;
         margin: 0 0 8vh 7vw;
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            font-size: 6em;
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 3.5em;
+            text-align: center;
+            margin: 0 0 5vh 0;
+        }
     }
 
     .reviews_img_block {
