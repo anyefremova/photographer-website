@@ -927,17 +927,17 @@ body {
 }
 @media (max-width: 767.98px) {
   .appointment_page .appointment_container .appointment_block .form_container .input_container .input_form1 {
-    width: 30vw;
+    width: 70vw;
   }
 }
 @media (max-width: 767.98px) {
   .appointment_page .appointment_container .appointment_block .form_container .input_container .input-tel-2 {
-    width: 50vw;
+    width: 70vw;
   }
 }
 @media (max-width: 767.98px) {
   .appointment_page .appointment_container .appointment_block .form_container .input_container .input_form2 {
-    width: 50vw;
+    width: 70vw;
   }
 }
 .appointment_page .appointment_container .appointment_block .form_container .input_container .input_fields {
