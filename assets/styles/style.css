@@ -1111,12 +1111,20 @@ body {
   }
 }
 
+.portfolio-page .nav-link-portfolio {
+  color: #D0B8AC;
+}
+.portfolio-page .nav-link-portfolio:hover {
+  font-family: "Montserrat-Bold", sans-serif;
+  color: #D0B8AC;
+}
+.portfolio-page .nav-link-portfolio.active {
+  font-family: "Montserrat-Bold", sans-serif;
+  color: #D0B8AC;
+}
 .portfolio-page .gallery {
   background-color: #000000;
   padding-top: 7vh;
-}
-.portfolio-page .gallery .header_portfolio {
-  color: #D0B8AC !important;
 }
 .portfolio-page .gallery .gallery-element {
   padding: 2vh 2vw;

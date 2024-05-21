@@ -1068,13 +1068,23 @@ body {
 }
 
 .portfolio-page {
+    .nav-link-portfolio {
+        color: $beige-title;
+    }
+
+    .nav-link-portfolio:hover {
+        font-family: $font-family-montserrat-bold;
+        color: $beige-title;
+    }
+
+    .nav-link-portfolio.active {
+        font-family: $font-family-montserrat-bold;
+        color: $beige-title;
+    }
+
     .gallery {
         background-color: #000000;
         padding-top: 7vh;
-
-        .header_portfolio {
-            color: $beige-title !important;
-        }
 
         .gallery-element {
             padding: 2vh 2vw;
