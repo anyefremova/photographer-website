@@ -41,6 +41,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 575.98px) {
+  .header {
+    background-color: #000000;
+  }
+  .header .nav-link {
+    color: #D0B8AC;
+  }
+}
 .header .header_container {
   flex-grow: 1;
 }
@@ -81,6 +89,7 @@ body {
 }
 .header .header_container .header_navbar .header_menu .header_nav .nav-link.active {
   font-family: "Montserrat-Bold", sans-serif;
+  color: #D0B8AC;
 }
 .header .header_container .header_navbar .navbar-collapse {
   text-align: center;

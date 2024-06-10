@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -227,16 +227,17 @@
                                 <div class="input_first">
                                     <div class="col-md-6 input_form1">
                                         <input type="text" class="form-control input_fields" id="inputName"
-                                            placeholder="Имя" aria-label="Имя" required>
+                                            placeholder="Имя" aria-label="Имя" pattern="^[А-Яа-яЁё]+$" required>
                                         <div class="invalid-feedback">
-                                            Пожалуйста, введите имя
+                                            Пожалуйста, введите корректное имя
                                         </div>
                                     </div>
                                     <div class="col-md-6 input_form1 input-tel-2">
                                         <input type="tel" class="form-control input_fields" id="inputPhone"
-                                            placeholder="Номер телефона" aria-label="Телефон" required>
+                                            placeholder="Номер телефона" aria-label="Телефон"
+                                            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
                                         <div class="invalid-feedback">
-                                            Пожалуйста, укажите телефон
+                                            Пожалуйста, укажите правильный номер телефона
                                         </div>
                                     </div>
                                 </div>

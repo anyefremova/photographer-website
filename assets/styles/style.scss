@@ -15,6 +15,14 @@ body {
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 575.98px) {
+        background-color: #000000;
+
+        .nav-link {
+            color: $beige-title;
+        }
+    }
+
     .header_container {
         flex-grow: 1;
 
@@ -58,6 +66,7 @@ body {
 
                     .nav-link.active {
                         font-family: $font-family-montserrat-bold;
+                        color: $beige-title;
                     }
                 }
             }
